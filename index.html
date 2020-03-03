@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8" />
+        <title>Z3UX's Pokédex</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="manifest" href="site.webmanifest" />
+        <link rel="apple-touch-icon" href="icon.png" />
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/app.css" />
+
+        <meta name="theme-color" content="#fafafa" />
+    </head>
+
+    <body>
+        <!-- WebApp -->
+        <div class="container">
+            <div id="pokedex">
+                <div id="left">
+                  <div id="logo"></div>
+                  <div id="bg_curve1_left"></div>
+                  <div id="bg_curve2_left"></div>
+                  <div id="curve1_left">
+                    <div id="buttonGlass">
+                      <div id="reflect"> </div>
+                    </div>
+                    <div id="miniButtonGlass1"></div>
+                    <div id="miniButtonGlass2"></div>
+                    <div id="miniButtonGlass3"></div>
+                  </div>
+                  <div id="curve2_left">
+                    <div id="junction">
+                      <div id="junction1"></div>
+                      <div id="junction2"></div>
+                    </div>
+                  </div>
+                  <div id="screen">
+                    <div id="topPicture">
+                      <div id="buttontopPicture1"></div>
+                      <div id="buttontopPicture2"></div>
+                    </div>
+                    <div id="picture">
+                      <img id="pokePicture" src="img/ac.png" alt="pokemon" height="175" />
+                    </div>
+                    <div id="buttonbottomPicture"></div>
+                    <div id="speakers">
+                      <div class="sp"></div>
+                      <div class="sp"></div>
+                      <div class="sp"></div>
+                      <div class="sp"></div>
+                    </div>
+                  </div>
+                  <div id="bigbluebutton">
+                      <p style="color: WHITE; text-align: center;">♬</p>
+                  </div>
+                  <div id="barbutton1"></div>
+                  <div id="barbutton2"></div>
+                  <div id="cross">
+                    <div id="leftcross" class="dpad">
+                      <div id="leftT"></div>
+                    </div>
+                    <div id="topcross" class="dpad">
+                      <div id="upT"></div>
+                    </div>
+                    <div id="rightcross" class="dpad">
+                      <div id="rightT"></div>
+                    </div>
+                    <div id="midcross" class="dpad">
+                      <div id="midCircle"></div>
+                    </div>
+                    <div id="botcross" class="dpad">
+                      <div id="downT"></div>
+                    </div>
+                  </div>
+                </div>
+                <div id="right">
+                  <div id="stats">
+                    <strong><div style="text-align: center;">Z3UX's Pokédex</div></strong><br/>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Pokédex # &nbsp;<strong><span id="pokeId"></span></strong><br/>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Name &nbsp;&nbsp;<strong><span id="pokeName"></span></strong><br/>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Height &nbsp;&nbsp;<strong><span id="pokeHeight"></span></strong><br/>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Weight &nbsp;<strong><span id="pokeWeight"></span></strong><br/>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    Type &nbsp;&nbsp;&nbsp; <strong><span id="pokeType"></span></strong><br/>
+                  </div>
+                  <div id="blueButtons1">
+                    <div id="blueButton1" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">1</p></div>
+                    <div id="blueButton2" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">2</p></div>
+                    <div id="blueButton3" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">3</p></div>
+                    <div id="blueButton4" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">4</p></div>
+                    <div id="blueButton5" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">5</p></div>
+                  </div>
+                  <div id="blueButtons2">
+                    <div id="blueButton6" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">6</p></div>
+                    <div id="blueButton7" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">7</p></div>
+                    <div id="blueButton8" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">8</p></div>
+                    <div id="blueButton9" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">9</p></div>
+                    <div id="blueButton10" class="blueButton"><p style="line-height: 5px; text-align: center; color: WHITE; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">0</p></div>
+                  </div>
+                  <div id="miniButtonGlass4"></div>
+                  <div id="miniButtonGlass5"></div>
+                  <div id="barbutton3"></div>
+                  <div id="barbutton4"></div>
+                  <span id="pokeButton"></a>
+                  <div id="yellowBox1">
+                      <p style="text-align: center; padding-top: 10px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-seri"><strong>SEARCH</strong></p>
+                  </div>
+                  <div id="yellowBox2">
+                      <p style="text-align: center; padding-top: 10px; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"> <strong>CLEAR</strong></p>
+                  </div>
+                  <div id="bg_curve1_right"></div>
+                  <div id="bg_curve2_right"></div>
+                  <div id="curve1_right"></div>
+                  <div id="curve2_right"></div>
+                </div>
+              </div>
+            <div id="app" />
+        </div>
+
+        <!-- WebApp -->
+        <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.4.0.min.js"
+            integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+            crossorigin="anonymous"
+        ></script>
+        <script>
+            window.jQuery ||
+                document.write('<script src="js/vendor/jquery-3.4.0.min.js"><\/script>');
+        </script>
+        <script src="js/plugins.js"></script>
+
+        <script
+            data-main="js/app/main"
+            src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"
+        ></script>
+
+    </body>
+</html>
